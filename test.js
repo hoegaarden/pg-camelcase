@@ -59,7 +59,7 @@ describe('test against real server', function(){
   var envKey = 'TEST_PG_CONNECTION';
   var pg;
 
-  if (!process.env.hasOwnProperty(envKey)) {
+  if (!Object.hasOwnProperty.call(process.env, envKey)) {
     return;
   } else{
     try { pg = require('pg'); } catch(_1) {
