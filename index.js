@@ -13,7 +13,7 @@ var exports = module.exports = {};
 
 
 //------------------------------------------------------------
-exports.camelCase = function camelCaser(snakeCase){
+exports.camelCase = function camelCase(snakeCase){
   assert( typeof snakeCase === 'string', 'argument is not a string');
 
   var tokens = snakeCase.split(/_+/).filter(function(token){

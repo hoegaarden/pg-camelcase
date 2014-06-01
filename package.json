@@ -1,5 +1,5 @@
 {
-  "name": "pgCamelCaser",
+  "name": "pg-camelcase",
   "version": "0.0.1",
   "description": "camel-casing for postgres result field names",
   "main": "index.js",
@@ -14,7 +14,7 @@
     "camelCase",
     "result"
   ],
-  "author": "Hannes Hörl <hannes.hoerl+pgcamelcaser@snowreporter.com>",
+  "author": "Hannes Hörl <hannes.hoerl+pgcamelcase@snowreporter.com>",
   "license": "ISC",
   "devDependencies": {
     "mocha": "^1.20.0",

@@ -1,4 +1,4 @@
-var pgCamelCaser = require('./index');
+var pgCamelCase = require('./index');
 var assert = require('assert');
 
 //------------------------------------------------------------
@@ -18,7 +18,7 @@ describe('camelCase()', function(){
     fix.forEach(function(mapping){
       var input = mapping[0];
       var expected = mapping[1];
-      assert.strictEqual(expected, pgCamelCaser.camelCase(input));
+      assert.strictEqual(expected, pgCamelCase.camelCase(input));
     });
   });
 });
@@ -45,7 +45,7 @@ describe('inject()', function(){
     };
 
     assert.deepEqual(input, callRowDesc(input));
-    var restore = pgCamelCaser.inject(pg);
+    var restore = pgCamelCase.inject(pg);
 
     assert.deepEqual(after, callRowDesc(input));
     restore();
@@ -103,7 +103,7 @@ describe('test against real server', function(){
       var query = queryAndTest.bind(null, client, stmt);
 
       query(fieldNames, function(){
-        var restore = pgCamelCaser.inject(pg);
+        var restore = pgCamelCase.inject(pg);
         query(ccFieldNames, function() {
           restore();
           query(fieldNames, function(){

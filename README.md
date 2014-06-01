@@ -1,4 +1,4 @@
-`pgCamelCaser`
+`pg-camelcase`
 ==============
 
 About
@@ -16,7 +16,7 @@ Example:
 
 ```js
 var pg = require('pg');
-var pgCamelCaser = require('pgCamelCaser');
+var pgCamelCase = require('pg-camelcase');
 var revertCamelCase = pgCamelCaser(pg);
 
 pg.connect(function(err, client, done){
