@@ -1,5 +1,5 @@
-`pgCamelCase`
-=============
+`pgCamelCaser`
+==============
 
 About
 -----
@@ -16,8 +16,8 @@ Example:
 
 ```js
 var pg = require('pg');
-var pgCamelCase = require('pgCamelCase');
-var revertCamelCase = pgCamelCase(pg);
+var pgCamelCaser = require('pgCamelCaser');
+var revertCamelCase = pgCamelCaser(pg);
 
 pg.connect(function(err, client, done){
     client.query('select 1 as "some_snake_case"', function(err, res){
