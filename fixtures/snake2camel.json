@@ -1,0 +1,9 @@
+[
+  [ "basic_snake_case", "basicSnakeCase" ] ,
+  [ "__SOME---__wired__SNakE__CASe___", "some---WiredSnakeCase" ] ,
+  [ "_", "_" ] ,
+  [ "___", "___" ] ,
+  [ "__s__", "__s__" ] ,
+  [ "", "" ] ,
+  [ "some non snake case", "some non snake case" ]
+]

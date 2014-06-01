@@ -1,0 +1,27 @@
+{
+  "name": "pgCamelCaser",
+  "version": "0.0.0",
+  "description": "camel-casing for postgres result field names",
+  "main": "index.js",
+  "scripts": {
+    "runTests": "mocha --reporter list",
+    "test": "npm run lint && npm run runTests",
+    "lint": "jshint --verbose *.js"
+  },
+  "keywords": [
+    "pg",
+    "postgres",
+    "camelCase",
+    "result"
+  ],
+  "author": "Hannes Hörl <hannes.hoerl+pgcamelcaser@snowreporter.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^1.20.0",
+    "jshint": "^2.5.1"
+  },
+  "optionalDependencies": {
+    "pg": "*",
+    "pg.js": "*"
+  }
+}
