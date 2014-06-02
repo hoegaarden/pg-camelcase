@@ -1,6 +1,6 @@
 {
   "name": "pg-camelcase",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "camel-casing for postgres result field names",
   "main": "index.js",
   "scripts": {
