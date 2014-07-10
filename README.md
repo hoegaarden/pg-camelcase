@@ -17,7 +17,7 @@ Example:
 ```js
 var pg = require('pg');
 var pgCamelCase = require('pg-camelcase');
-var revertCamelCase = pgCamelCaser(pg);
+var revertCamelCase = pgCamelCase.inject(pg);
 
 pg.connect(function(err, client, done){
     client.query('select 1 as "some_snake_case"', function(err, res){
